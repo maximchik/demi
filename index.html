@@ -27,10 +27,34 @@
             p {
                 text-align: justify;
             }
-            img {
+            .content img {
                 width: 33.33333%;
+                object-fit: cover;
+                height: 20vh;
+            }
+            .modal {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #000c;
+            }
+            .modal-content {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+            .modal-content img {
+                width: 90%;
+                max-width: 1048px;
+                height: fit-content;
             }
         </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body>
         <div class="page-wrap">
@@ -39,7 +63,7 @@
 <p>Медиахудожник, перформер, куратор исследовательского проекта «MEDIA BODY MEDIA», Елена работает со словом и телом, изучает мультимодальность сенсорного восприятия, исследует возможности мультисенсорной коммуникации, разрабатывает интерактивные технологические скульптуры и объекты-компаньоны, а также работает в направлении интерактивного медиаперформанса.</p>
 <p>Ведет арт-практики и лаборатории (“Тело текста”, “Молчаливые практики” ), преподает на курсе “Арт-коучинг и арт-педагогика” в Московском институте психоанализа.</p>
 <p>Участник российских и международных фестивалей с 2009 г.</p>
-<p><img src="img-01.jpg" alt=""><img src="img-02.jpg" alt=""><img src="img-03.jpg" alt=""><img src="img-04.jpg" alt=""><img src="img-06.jpg" alt=""><img src="img-07.jpg" alt=""><img src="img-08.jpg" alt=""><img src="img-09.jpg" alt=""><img src="img-10.jpg" alt=""></p>
+<p><img src="img-01.jpg" alt=""><img src="img-02.jpg" alt=""><img src="img-03.jpg" alt=""><img src="img-04.jpg" alt=""><img src="img-05.jpg" alt=""><img src="img-06.jpg" alt=""><img src="img-07.jpg" alt=""><img src="img-08.jpg" alt=""><img src="img-09.jpg" alt=""></p>
 <p>Образование:</p>
 <ul>
 <li>магистратура управления инновациями ВШЭ (темы исследования: инновации и Art&amp;Science, технологии сенсорного замещения, аугментация человека) Москва, 2021</li>
@@ -84,5 +108,21 @@
 
             </div>
         </div>
+        <div class="modal" style="display: none;">
+            <div class="modal-content">
+                <img src="">
+            </div>
+        </div>
+        <script>
+            $(function () {
+                $('img').click(function(a) {
+                    $('.modal img').attr("src", a.target.src);
+                    $('.modal').show();
+                });
+                $('.modal').click(function(a) {
+                    $('.modal').hide();
+                });
+            });
+        </script>
     </body>
 </html>
