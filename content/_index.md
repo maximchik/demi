@@ -43,7 +43,7 @@ title: "Елена Деми-дова"
 
 Публикации:
 
-- 2015  -  "Медиапоэзия: как рассчитать технологию вдохновения, выстроить шум в математическом порядке, читать поэзию на ощупь и рифмовать цифры". "Медиатека и мир" РГБ
-- 2020 - со-автор Ксения Федорова, "[Qualia Formation through Sensory Substitution in Artistic Laboratories in Russia](https://isea-archives.siggraph.org/presentation/qualia-formation-through-sensory-substitution-in-artistic-laboratories-in-russia/)" Why Senstience? 26th International Symposium on Electronic Arts (ISEA), Montreal
+- 2015  -  "Медиапоэзия: как рассчитать технологию вдохновения, выстроить шум в математическом порядке, читать поэзию на ощупь и рифмовать цифры". "Медиатека и мир" РГБ.
+- 2020 - со-автор Ксения Федорова, "[Qualia Formation through Sensory Substitution in Artistic Laboratories in Russia](https://isea-archives.siggraph.org/presentation/qualia-formation-through-sensory-substitution-in-artistic-laboratories-in-russia/)" Why Senstience? 26th International Symposium on Electronic Arts (ISEA), Montreal.
 
 mediabodymedia@gmail.com
