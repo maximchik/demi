@@ -1,0 +1,16 @@
+name = "My"
+license = "MIT"
+description = ""
+homepage = "http://example.com/"
+tags = []
+features = []
+
+[author]
+  name = ""
+  homepage = ""
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""

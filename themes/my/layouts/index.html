@@ -1,0 +1,85 @@
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="ru-RU">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>{{ .Title }}</title>
+        <link rel='canonical' href='/' />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Tenor+Sans&family=Jura&display=swap" rel="stylesheet">
+        <meta http-equiv="Content-Language" content="ru-RU" />
+        <style media="all" type="text/css">
+            body {
+                margin: 0;
+                font-family: 'Jura', sans-serif;
+                font-size: 18px;
+                line-height: 1.5em;
+            }
+            .page-wrap {
+                display: flex;
+                justify-content: center;
+                padding-top: 5vh;
+                padding-bottom: 5vh;
+            }
+            .content {
+                max-width: 1024px;
+                margin: 0 30px;
+            }
+            p {
+                text-align: justify;
+            }
+            .content img {
+                width: 33.33333%;
+                object-fit: cover;
+                height: 20vh;
+                cursor: pointer;
+            }
+            .modal {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #000d;
+                cursor: pointer;
+            }
+            .modal-content {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+            .modal-content img {
+                width: 90%;
+                max-width: 1048px;
+                height: fit-content;
+            }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="page-wrap">
+            <div class="content">
+                    {{ .Content }}
+            </div>
+        </div>
+        <div class="modal" style="display: none;">
+            <div class="modal-content">
+                <img src=""><br/>
+                <svg style="width: 40px; fill: #bbb;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M175 175C184.4 165.7 199.6 165.7 208.1 175L255.1 222.1L303 175C312.4 165.7 327.6 165.7 336.1 175C346.3 184.4 346.3 199.6 336.1 208.1L289.9 255.1L336.1 303C346.3 312.4 346.3 327.6 336.1 336.1C327.6 346.3 312.4 346.3 303 336.1L255.1 289.9L208.1 336.1C199.6 346.3 184.4 346.3 175 336.1C165.7 327.6 165.7 312.4 175 303L222.1 255.1L175 208.1C165.7 199.6 165.7 184.4 175 175V175zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 48C141.1 48 48 141.1 48 256C48 370.9 141.1 464 256 464C370.9 464 464 370.9 464 256C464 141.1 370.9 48 256 48z"/></svg>
+            </div>
+        </div>
+        <script>
+            $(function () {
+                $('img').click(function(a) {
+                    $('.modal img').attr("src", a.target.src);
+                    $('.modal').show();
+                });
+                $('.modal').click(function(a) {
+                    $('.modal').hide();
+                });
+            });
+        </script>
+    </body>
+</html>
